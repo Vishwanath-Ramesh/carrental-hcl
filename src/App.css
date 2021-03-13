@@ -1,0 +1,109 @@
+body{
+  background-color: #c7c7c7;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 10px 5px;
+  width: 33.33%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+}
+
+.card h1, h2, p{
+  margin: 4px;
+}
+.card .rental-price {
+  color: green;
+  font-weight: bold;
+}
+.card .vehicle-type {
+  color: blue;
+  opacity: 0.6;
+}
+.card:hover{
+  transform: scale(0.95);
+  background-color: #91ff91;
+  cursor: pointer;
+}
+
+.request-form{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000ad;
+}
+.request-form .content{
+  background-color: white;
+  box-shadow: 10px 1px 118px black;
+  width: 500px;
+  height: 100%;
+  padding: 25px;
+}
+
+.request-form .content h1, h2, p{
+  margin: 4px;
+}
+.request-form h2{
+  margin-left: 0;
+}
+
+.request-form input{
+  width: 100%;
+  font-size: 1.5em;
+  margin: 10px 0px;
+}
+.request-form input[type="radio"] {
+  width: auto;
+  margin: 5px 0px;
+}
+.request-form label {
+  font-weight: bold;
+}
+.request-form .amount-payable {
+  color: green;
+  font-size: 2em;
+}
+
+.request-form .model-name{
+  color: gray;
+}
+
+.request-form .frm-action-btn button {
+  width: 48%;
+  font-size: 2em;
+  margin: 5px 1%;
+}
+
+.success-message{
+  color: white;
+}
